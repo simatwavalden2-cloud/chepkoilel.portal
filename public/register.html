@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create account | Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2v3.6c0 1.7 3.1 3.2 7 3.2s7-1.5 7-3.2v-3.6l-7 3.8-7-3.8z"/></svg>
+      <h2>STUDENT PORTAL</h2>
+      <p>Create your account</p>
+    </div>
+    <div class="body">
+      <form id="regForm" novalidate>
+        <div class="form-group">
+          <label for="fullName" class="sr-only">Full name</label>
+          <div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4 0-8 2-8 5v3h16v-3c0-3-4-5-8-5z"/></svg>
+            <input type="text" id="fullName" placeholder="Full name" autocomplete="name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="sr-only">Email</label>
+          <div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <input type="email" id="email" placeholder="Email address" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="studentId" class="sr-only">Student ID</label>
+          <div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4 0-8 2-8 5v3h16v-3c0-3-4-5-8-5z"/></svg>
+            <input type="text" id="studentId" placeholder="Student ID" autocomplete="username" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="pass" class="sr-only">Password</label>
+          <div class="input-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6zm3 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+            <input type="password" id="pass" placeholder="Password (8+ characters)" autocomplete="new-password" required>
+          </div>
+        </div>
+        <button class="btn btn-success" type="submit" id="submitBtn">Create account</button>
+        <a class="link" href="index.html">Already have an account? Sign in</a>
+        <p class="message" id="msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+  <script src="common.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
